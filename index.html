@@ -3,160 +3,157 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>História das Copas do Mundo</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f9;
-            color: #333;
-        }
-        header {
-            background: linear-gradient(135deg, #0066b2, #002f6c);
-            color: #fff;
-            padding: 2rem 1rem;
-            text-align: center;
-            border-bottom: 5px solid #ffcc00;
-        }
-        main {
-            max-width: 1000px;
-            margin: 2rem auto;
-            padding: 0 1rem;
-        }
-        .intro {
-            background: #fff;
-            padding: 1.5rem;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-            margin-bottom: 2rem;
-        }
-        .card-copa {
-            background: #fff;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-            margin-bottom: 2rem;
-            overflow: hidden;
-            border-left: 5px solid #0066b2;
-        }
-        .card-header {
-            background: #f8f9fa;
-            padding: 1rem;
-            font-size: 1.25rem;
-            font-weight: bold;
-            border-bottom: 1px solid #eee;
-            display: flex;
-            justify-content: space-between;
-        }
-        .card-body {
-            padding: 1rem;
-            display: flex;
-            flex-wrap: wrap;
-            gap: 1.5rem;
-        }
-        .card-text {
-            flex: 2;
-            min-width: 250px;
-        }
-        .card-img {
-            flex: 1;
-            min-width: 200px;
-            max-width: 300px;
-        }
-        .card-img img {
-            width: 100%;
-            height: auto;
-            border-radius: 4px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.15);
-        }
-        footer {
-            text-align: center;
-            padding: 2rem;
-            background: #333;
-            color: #fff;
-            margin-top: 2rem;
-        }
-    </style>
+    <title>World Cup  | Gamer Edition</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
-    <header>
-        <h1>Almanaque das Copas do Mundo</h1>
-        <p>Uma jornada de 1930 até os dias atuais</p>
+    <div class="bg-overlay"></div>
+
+    <header class="navbar">
+        <div class="logo">
+            <i class="fa-solid fa-gamepad"></i> WORLD<span>CUP</span> HQ
+        </div>
+        <nav class="nav-links">
+            <a href="#hub" class="active"><i class="fa-solid fa-house"></i> Hub</a>
+            <a href="#podium"><i class="fa-solid fa-trophy"></i> Pódio 2026</a>
+            <a href="#stats"><i class="fa-solid fa-chart-simple"></i> Campanhas</a>
+            <a href="#records"><i class="fa-solid fa-crown"></i> Hall da Fama</a>
+        </nav>
+        <div class="status-badge">
+            <span class="pulse"></span> LIVE DATABASE
+        </div>
     </header>
 
-    <main>
-        <section class="intro">
-            <h2>A História do Maior Espetáculo da Terra</h2>
-            <p>Desde a sua primeira edição em 1930, no Uruguai, a Copa do Mundo da FIFA se tornou o evento esportivo mais assistido do planeta, unindo nações e consagrando lendas do futebol mundial.</p>
-        </section>
-
-        <div class="card-copa">
-            <div class="card-header">
-                <span>Uruguai 1930</span>
-                <span>Campeão: Uruguai 🇺🇾</span>
+    <section id="hub" class="hero">
+        <div class="hero-content">
+            <span class="tag-neon">FINAL MATCH UPDATE</span>
+            <h1>COPA DO MUNDO <span>2026</span></h1>
+            <p>O maior espetáculo do planeta finalizado. Confira as estatísticas, dados dos campeões e conquistas históricas.</p>
+            <div class="hero-btns">
+                <a href="#podium" class="btn btn-primary"><i class="fa-solid fa-play"></i> Ver Campeã</a>
+                <a href="#stats" class="btn btn-secondary"><i class="fa-solid fa-database"></i> Explorar Dados</a>
             </div>
-            <div class="card-body">
-                <div class="card-text">
-                    <p>A primeira Copa do Mundo da história foi realizada no Uruguai, com apenas 13 seleções convidadas. O time da casa confirmou o favoritismo e venceu a Argentina na grande final por 4 a 2 no Estádio Centenário.</p>
+        </div>
+    </section>
+
+    <section id="podium" class="section">
+        <div class="section-title">
+            <h2><i class="fa-solid fa-ranking-star"></i> PÓDIO DO TORNEIO</h2>
+            <p>Encerramento oficial no MetLife Stadium</p>
+        </div>
+
+        <div class="podium-grid">
+            <div class="card-podium silver">
+                <div class="rank-badge">#2</div>
+                <div class="card-icon"><i class="fa-solid fa-medal"></i></div>
+                <h3>Vice-Campeã</h3>
+                <span class="team-name">ARGENTINA 🇦🇷</span>
+                <p class="match-detail">Finalista | 0 x 1 vs ESP (Prorrogação)</p>
+            </div>
+
+            <div class="card-podium gold glow-gold">
+                <div class="rank-badge">#1</div>
+                <div class="card-icon"><i class="fa-solid fa-trophy"></i></div>
+                <h3>GRANDE CAMPEÃ</h3>
+                <span class="team-name">ESPANHA 🇪🇸</span>
+                <p class="match-detail">Gol de Ferran Torres aos 106'</p>
+                <span class="tag-gold">BI-CAMPEÃ MUNDIAL</span>
+            </div>
+
+            <div class="card-podium bronze">
+                <div class="rank-badge">#3</div>
+                <div class="card-icon"><i class="fa-solid fa-award"></i></div>
+                <h3>3º Lugar</h3>
+                <span class="team-name">INGLATERRA 🏴󠁧󠁢󠁥󠁮󠁧󠁿</span>
+                <p class="match-detail">Vitória por 6 x 4 vs França</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="stats" class="section bg-darker">
+        <div class="section-title">
+            <h2><i class="fa-solid fa-microchip"></i> BANCO DE DADOS DAS CAMPEÃS</h2>
+            <p>Selecione a edição para carregar a telemetria do título</p>
+        </div>
+
+        <div class="campaign-container">
+            <div class="controls-panel">
+                <label for="select-ano"><i class="fa-solid fa-sliders"></i> Selecionar Edição:</label>
+                <div class="custom-select">
+                    <select id="select-ano" onchange="atualizarCampanha()">
+                        <option value="2026">2026 — Espanha 🇪🇸</option>
+                        <option value="2022">2022 — Argentina 🇦🇷</option>
+                        <option value="2018">2018 — França 🇫🇷</option>
+                        <option value="2002">2002 — Brasil 🇧🇷</option>
+                        <option value="1970">1970 — Brasil 🇧🇷</option>
+                        <option value="1930">1930 — Uruguai 🇺🇾</option>
+                    </select>
                 </div>
-                <div class="card-img">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/8/83/Uruguay_1930_World_Cup_Champion.jpg" alt="Uruguai Campeão 1930">
+            </div>
+
+            <div class="glass-card" id="card-campanha">
+                <div class="card-media">
+                    <img id="img-campeao" src="https://via.placeholder.com/600x350/0f172a/00ff88?text=ESPANHA+2026" alt="Campeão">
+                    <div class="media-overlay"></div>
+                </div>
+                <div class="card-details">
+                    <h3 id="titulo-campeao">Espanha (2026)</h3>
+                    <div class="divider"></div>
+                    <p id="detalhe-campanha">Bicampeonato em solo norte-americano! A Espanha fez uma campanha impecável. Nas fases finais, eliminou forças europeias e venceu a Argentina por 1 a 0 na prorrogação no MetLife Stadium.</p>
+                    <div class="stats-row">
+                        <div class="stat-box">
+                            <i class="fa-solid fa-shield-halved"></i>
+                            <span>Status</span>
+                            <strong>Campeã Invicto</strong>
+                        </div>
+                        <div class="stat-box">
+                            <i class="fa-solid fa-crosshairs"></i>
+                            <span>Sede</span>
+                            <strong>EUA / MEX / CAN</strong>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+    </section>
 
-        <div class="card-copa">
-            <div class="card-header">
-                <span>Suécia 1958</span>
-                <span>Campeão: Brasil 🇧🇷</span>
-            </div>
-            <div class="card-body">
-                <div class="card-text">
-                    <p>O nascimento do Rei do Futebol. Com apenas 17 anos, Pelé encantou o mundo, marcou gols decisivos e ajudou o Brasil a conquistar seu primeiro título mundial, goleando a Suécia por 5 a 2 na final.</p>
-                </div>
-                <div class="card-img">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/ad/Pel%C3%A9_and_Gilmar_1958.jpg" alt="Pelé chora nos braços de Gilmar em 1958">
-                </div>
-            </div>
+    <section id="records" class="section">
+        <div class="section-title">
+            <h2><i class="fa-solid fa-bolt"></i> HALL DA FAMA & RECORDES</h2>
+            <p>Estatísticas históricas gravadas na rede</p>
         </div>
 
-        <div class="card-copa">
-            <div class="card-header">
-                <span>México 1986</span>
-                <span>Campeão: Argentina 🇦🇷</span>
+        <div class="records-grid">
+            <div class="record-card">
+                <div class="record-icon"><i class="fa-solid fa-users"></i></div>
+                <h4>Maior Público</h4>
+                <div class="big-stat">173.850</div>
+                <p>Maracanã | Brasil vs Uruguai (1950)</p>
             </div>
-            <div class="card-body">
-                <div class="card-text">
-                    <p>A Copa que imortalizou Diego Armando Maradona. Com atuações lendárias, incluindo o gol da "Mão de Deus" e o "Gol do Século" contra a Inglaterra, o camisa 10 carregou a Argentina ao seu segundo título.</p>
-                </div>
-                <div class="card-img">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/69/Maradona_copa_do_mundo_1986.jpg" alt="Maradona com a taça de 1986">
-                </div>
+            <div class="record-card">
+                <div class="record-icon"><i class="fa-solid fa-fire"></i></div>
+                <h4>Maior Artilheiro</h4>
+                <div class="big-stat">22 GOLS</div>
+                <p>Kylian Mbappe (França)</p>
             </div>
-        </div>
-
-        <div class="card-copa">
-            <div class="card-header">
-                <span>Catar 2022</span>
-                <span>Campeão: Argentina 🇦🇷</span>
-            </div>
-            <div class="card-body">
-                <div class="card-text">
-                    <p>Considerada uma das finais mais emocionantes de todos os tempos, a Argentina de Lionel Messi empatou em 3 a 3 com a França de Mbappé no tempo normal e prorrogação, vencendo nos pênaltis para coroar a carreira do astro argentino.</p>
-                </div>
-                <div class="card-img">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/b/b4/Lionel_Messi_with_the_World_Cup_trophy_2022.jpg" alt="Lionel Messi erguendo a taça em 2022">
-                </div>
+            <div class="record-card">
+                <div class="record-icon"><i class="fa-solid fa-crown"></i></div>
+                <h4>Maior Campeão</h4>
+                <div class="big-stat">3 TÍTULOS</div>
+                <p>Pelé (1958, 1962, 1970)</p>
             </div>
         </div>
+    </section>
 
-        </main>
-
-    <footer>
-        <p>&copy; 2026 - Memorial das Copas do Mundo. Feito com HTML e CSS.</p>
+    <footer class="footer">
+        <div class="footer-content">
+            <p><i class="fa-solid fa-terminal"></i> WORLD CUP HQ // SYSTEM ONLINE</p>
+            <p class="sub">Atualizado com os dados finais da Copa do Mundo 2026.</p>
+        </div>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>
